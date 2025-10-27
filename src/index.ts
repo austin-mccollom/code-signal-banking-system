@@ -38,13 +38,6 @@ class Account {
     constructor() {
 
     }
-}
-class Bank {
-    private accounts: Map<number, Account>;
-
-    constructor() {
-        this.accounts;
-    }
 
     deposit(target: number, amount: number): boolean {
         return false;
@@ -56,6 +49,13 @@ class Bank {
     
     withdraw(from: number, amount: number): boolean {
         return false;
+    }
+}
+class Bank {
+    private accounts: Map<number, Account>;
+
+    constructor() {
+        this.accounts;
     }
 
     topVolumeAccounts(k: number) {
