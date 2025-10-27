@@ -42,7 +42,9 @@ class Account {
     }
 
     deposit(target: number, amount: number): boolean {
-        return false;
+        this.balance += amount;
+        // how could this ever fail? if we're calling it on a specific Account, surely that account exists??
+        return true;
     }
 
     transfer(from: number, to: number, amount: number): boolean {
