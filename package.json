@@ -1,0 +1,18 @@
+{
+  "name": "code-signal-banking-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:austin-mccollom/code-signal-banking-system.git",
+  "author": "<austin@daylight.xyz>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && npx tsc"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
