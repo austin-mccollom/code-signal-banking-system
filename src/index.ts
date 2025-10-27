@@ -35,8 +35,10 @@ class Account {
     private balance: number;
     // private transactionHistory: 
 
-    constructor() {
-
+    constructor(id: number, balance: number) {
+        // id assignment handled by Bank class
+        this.id = id;
+        this.balance = balance;
     }
 
     deposit(target: number, amount: number): boolean {
@@ -53,9 +55,17 @@ class Account {
 }
 class Bank {
     private accounts: Map<number, Account>;
+    private nextAccountId: number
 
     constructor() {
-        this.accounts;
+        this.accounts = new Map<number, Account>;
+        this.nextAccountId = 1;
+    }
+
+    createAccount(balance: number) {
+        const newAccount = new Account(nextAccountId, balance);
+                this.accounts.set(nextAccountId, newAccount);
+        nextAccountId++;
     }
 
     topVolumeAccounts(k: number) {
