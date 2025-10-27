@@ -13,6 +13,9 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "chai": "^6.2.0",
+    "chai-spies": "^1.1.0",
+    "dotenv": "^17.2.3",
+    "mocha": "^11.7.4"
   }
 }
